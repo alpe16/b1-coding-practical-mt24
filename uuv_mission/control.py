@@ -3,6 +3,9 @@ class Controller:
     def __init__(self):
         self.previous_error = 0
 
+    def reset(self):
+        self.previous_error = 0
+
     def control(self, reference_depth, current_depth):
 
         error = reference_depth - current_depth
